@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyHealthApp.MainPage">
+    <StackLayout >
+        <Label Text="Журнал здоровья" HorizontalOptions="Center" FontSize="36"/>
+        <Image Source="https://cdn.icon-icons.com/icons2/944/PNG/512/medical-15_icon-icons.com_73938.png" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Entry x:Name="upPressureInput" FontSize="24" Placeholder=" ВД " Grid.Column="0" HorizontalOptions="Center" Keyboard="Numeric"/>
+            <Entry x:Name="lowPressureInput" FontSize="24" Placeholder=" НД " Grid.Column="1" HorizontalOptions="Center" Keyboard="Numeric"/>
+            <Entry x:Name="heartRateInput" FontSize="24" Placeholder=" ЧСС " Grid.Column="2" HorizontalOptions="Center" Keyboard="Numeric"/>
+        </Grid>
+        <Editor x:Name="healthState" HorizontalOptions="Center" FontSize="24" Placeholder="Общее состояние"/>
+        <Grid Margin="20, 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="writeData" Text="Записать" Grid.Column="0" Clicked="writeData_Clicked" BackgroundColor="Lightgreen" FontSize="18"/>
+            <Button x:Name="viewData" Text="Посмотреть" Grid.Column="1" Clicked="viewData_Clicked" Background="lightpink" FontSize="18"/>
+        </Grid>
+        <Label x:Name="outMessage" Text="" TextColor="red" HorizontalOptions="Center" FontSize="24" />
+    </StackLayout>
+</ContentPage>
