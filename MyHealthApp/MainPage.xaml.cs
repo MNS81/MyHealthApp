@@ -32,7 +32,7 @@ namespace MyHealthApp
             else
             {
                 StreamWriter f = new StreamWriter(path, true);
-                f.WriteLine($"{DateTime.Now.ToString().Split()[0]}  {upPress}, {lowPress}, {hRate} -> {hState}");
+                f.WriteLine($"{DateTime.Now.ToString().Split()[0]} {upPress} / {lowPress} - {hRate}  ->  {hState}");
                 f.Close();
                 outMessage.Text = "Данные записаны!";
             }

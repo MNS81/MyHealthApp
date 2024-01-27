@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <Label x:Name="outText" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" FontSize="15" TextColor="black"/>
+                <Label x:Name="outText" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" FontSize="16" TextColor="black"/>
                 <Button x:Name="clearButton" Text="Очистить" BackgroundColor="lightpink" FontSize="16" Clicked="clearButton_Clicked"/>
             </StackLayout>
         </ScrollView>

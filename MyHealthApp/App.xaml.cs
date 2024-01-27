@@ -1,6 +1,4 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 
 namespace MyHealthApp
 {
@@ -9,20 +7,13 @@ namespace MyHealthApp
         public App()
         {
             InitializeComponent();
-
             MainPage = new NavigationPage(new MainPage());
         }
 
-        protected override void OnStart()
-        {
-        }
+        protected override void OnStart() { }
 
-        protected override void OnSleep()
-        {
-        }
+        protected override void OnSleep() { }
 
-        protected override void OnResume()
-        {
-        }
+        protected override void OnResume() { }
     }
 }
